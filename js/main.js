@@ -1,5 +1,11 @@
 jQuery(function($) {
 
+	$('a.show-login').click(function(e)
+	{
+		//prevent jumping to top of page (visiting "#")
+    	e.preventDefault();
+	});
+	
 	//Preloader
 	var preloader = $('.preloader');
 	$(window).load(function(){

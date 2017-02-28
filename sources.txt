@@ -1,0 +1,10 @@
+Sources for Bootstrap plugins:
+
+# contact page 
+http://bootsnipp.com/snippets/4lW12
+
+# login popup
+http://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects
+
+# register page
+http://bootsnipp.com/snippets/vvnKj

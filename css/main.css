@@ -13,9 +13,10 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 28px;
   color: #666;
+  /*padding-top:65px;*/
   background-color: #fff;
 }
 
@@ -23,13 +24,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
-h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
+h1 { font-size: 218%; margin-bottom: 30px; }
+h2 { font-size: 164%; margin-bottom: 20px;}
+h3 { font-size: 145%; }
+h4 { font-size: 118%; }
 
-h3 {
-  font-size: 18px;
+p{
+  margin-bottom: 1.5em;
 }
 
 .parallax {
@@ -49,6 +50,10 @@ h3 {
   color: #fff;
 }
 
+.white-space{
+  margin: 10em 0;
+}
+
 .parallax input[type="text"],
 .parallax input[type="text"]:hover,
 .parallax input[type="email"],
@@ -59,8 +64,8 @@ h3 {
 .parallax input[type="password"]:hover,
 .parallax textarea,
 .parallax textarea:hover {
-  font-weight: 300;
-  color: #fff;
+  font-weight: 400;
+  color: #000
 }
 
 .btn {
@@ -73,11 +78,18 @@ h3 {
 }
 
 .navbar-nav li a:hover, 
-.navbar-nav li a:focus {
+.navbar-nav li a:focus,
+.navbar-nav li button:hover,
+.navbar-nav li button:focus {
   outline:none;
   outline-offset: 0;
   text-decoration:none;  
   background: transparent;
+}
+.logo .helper{
+  display: inline-block;
+  width:90%;
+  line-height: 50px;
 }
 
 a {
@@ -95,11 +107,13 @@ a:hover {
 }
 
 section {
-  padding: 90px 0;
+  padding: 0px;
+  margin:0px;
 }
 
+
 .heading {
-  padding-bottom:90px;
+  padding:55px 0;
 }
 
 .preloader {
@@ -125,7 +139,9 @@ section {
   display: inline-block;
 }
 
-
+.img-responsive{
+  width:100%;
+}
 /*************************
 ********Home CSS**********
 **************************/
@@ -152,7 +168,6 @@ section {
   color: #fff;
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 30px;
 }
 
 .caption .btn-start {
@@ -256,11 +271,12 @@ section {
   font-size: 24px;
   line-height: 24px;
   z-index: 999;
-  -webkit-animation: bounce 3000ms infinite;
-  animation: bounce 3000ms infinite;
+  /*-webkit-animation: bounce 3000ms infinite;*/
+  /*animation: bounce 3000ms infinite;*/
 }
 
-.navbar-right li a {
+.navbar-right li a,
+.navbar-right li button{
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
@@ -269,7 +285,8 @@ section {
   padding-bottom: 30px;
 }
 
-.navbar-right li.active a {
+.navbar-right li.active a,
+.navbar-right li.active button {
   background-color: rgba(0,0,0,.2);
 }
 
@@ -282,17 +299,20 @@ section {
 **************************/
 
 .service-icon {
-  border-radius: 4px;
-  color: #fff;
+  border-radius: 50%;
+  background-color: #fff;
   display: inline-block;
-  font-size: 36px;
-  height: 90px;
-  line-height: 90px;
-  width: 90px;  
+  height: 150px;
+  line-height: 150px;
+  width: 150px;  
+  font-size:5em;
+  color:#43484E;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
 
+.service-icon i {
+}
 .our-services .col-sm-4:hover .service-icon {
   background-color: #333;
 }
@@ -319,12 +339,55 @@ section {
   margin-top: 35px;
 }
 
+#services{
+  text-align: center;
+  margin:0px;
+  padding:0px;
+  background-image: url(../images/other/student-2.jpg);
+}
+
+.service-listings {
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
+
+.service-listing {
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+.service-info h3 {
+  margin-top: 35px;
+}
+
+.service-info h4 {
+  margin-bottom: 15px;
+  color: #999;
+}
+
+.service-listing, .service-listing a{
+    background-color: rgba(0,0,0,.5);
+    padding: 15px;
+    color: #fff;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.service-listing img{
+    width: 90%;
+    margin: auto;
+}
+
+.service-listing:hover, .service-listing:hover a{
+    background-color: rgba(252, 153, 0,.7);
+}
+
 /*************************
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-bg.jpg);
-  padding: 60px 0;
+  background-image: url(../images/other/student-3.jpg);
 }
 
 #about-us h2 {
@@ -337,8 +400,8 @@ section {
   margin-bottom: 10px;
 }
 
-#about-us h1 {
-  margin-bottom: 30px;
+.about-info {
+  padding:75px 0;
 }
 
 .progress{
@@ -373,10 +436,23 @@ section {
 #portfolio .col-sm-3  {
   overflow: hidden;
   padding: 0;
+  background-color: #f2f2f2;
+  padding: 75px 0;
 }
 
 #portfolio .folio-item {
   position: relative;
+  background-color: #fff;
+  height: 250px;
+}
+#portfolio .folio-image img{
+  width:100%;
+}
+
+#portfolio .helper{
+  display: inline-block;
+  width:100%;
+  line-height: 250px;
 }
 
 #portfolio .overlay {
@@ -444,15 +520,6 @@ section {
   transition: all 0.8s ease-in-out;
 }
 
-#portfolio .folio-item:hover .folio-image {
-  -webkit-transform: scale(1.5) rotate(-15deg);
-  transform: scale(1.5) rotate(-15deg);
-}
-
-.folio-image img {
-  width: 100%;
-}
-
 #portfolio .folio-item:hover .overlay {
   opacity: 0.8;
   bottom: 0;
@@ -496,12 +563,17 @@ section {
 /*************************
 *********Team CSS*********
 **************************/
+
 #team {
-  padding-top: 0;
+  text-align: center;
+  margin:0px;
+  padding:0px;
+  background-image: url(../images/other/tutor-1.jpg);
 }
 
 .team-members {
-  margin-bottom: 25px;
+  margin-bottom: 75px;
+  margin-top:75px;
 }
 
 .social-icons {
@@ -548,116 +620,38 @@ section {
   font-size: 14px;
 }
 
-.team-member:hover .social-icons ul li a.facebook {
-  background-color: #3b5999;
-}
-.team-member:hover .social-icons ul li a.twitter {
-  background-color: #2ac6f7;
-}
-.team-member:hover .social-icons ul li a.dribbble {
-  background-color: #ff5b92;
-}
-.team-member:hover .social-icons ul li a.linkedin {
-  background-color: #036dc0;
-}
-.team-member:hover .social-icons ul li a.rss {
-  background-color: #ff6b00;
-}
-
-#team .img-responsive {
-  width: 100%;
-}
-
 .member-info h3 {
   margin-top: 35px;
 }
 
 .member-info h4 {
-  font-size: 14px;
   margin-bottom: 15px;
   color: #999;
 }
 
-
-/*************************
-*******Features CSS*******
-**************************/
-#features {
-  text-align: center;
-  background-image: url(../images/features-bg.jpg);
+.team-member, .team-member a{
+    background-color: rgba(0,0,0,.5);
+    padding: 15px;
+    color: #fff;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
-#features i {
-  font-size: 48px;
+.team-member img{
+    width: 90%;
+    margin: auto;
 }
 
-#features h3 {
-  margin-top: 15px;
-  font-size: 30px;
-  margin-bottom: 7px;
-  color: #fff;
+.team-member:hover, .team-member:hover a{
+    background-color: rgba(252, 153, 0,.7);
 }
 
-#features .slider-overlay {
-  opacity: 0.8;
-}
-
-
-/*************************
-*****Pricing Table CSS****
-**************************/
-.pricing-table {
-  text-align: center;
-}
-
-.single-table {
-  padding: 30px 20px 20px;
-  border:1px solid #f2f2f2;
-}
-
-.single-table h3 {
-  margin-top: 0;
-  padding: 0;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.price {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.price span {
-  font-size: 14px;
-  line-height: 14px;
-}
-
-.single-table ul {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
-}
-
-.single-table ul li {
-  line-height: 30px;
-}
-
-.single-table.featured {  
-  color: #fff;
-}
-
-.single-table.featured h3 { 
-  color: #fff;
-}
-
-.single-table.featured .btn.btn-primary {
-  background-color: #fff;
-}
 
 /*************************
 ********Twitter CSS*******
 **************************/
+
+/*
 #twitter {
   background-image: url(../images/twitter-bg.jpg);
 }
@@ -738,7 +732,7 @@ section {
   color: #fff;
 }
 
-
+*/
 /*************************
 **********Blog CSS********
 **************************/
@@ -851,7 +845,7 @@ section {
 **************************/
 
 #contact {
-  padding-top: 45px;
+  /*padding-top: 45px;*/
   padding-bottom: 0;
 }
 
@@ -860,15 +854,19 @@ section {
 }
 
 #contact-us {
-  background-image:url(../images/contact-bg.jpg);
-  padding-bottom: 90px; 
+  background-image:url(../images/other/student-5.jpg);
 }
 
 #contact-us .heading {
   padding-top: 95px;
 }
 
-.form-control {
+
+#contact-us .contact-form{
+  padding:75px 0;
+}
+
+#contact-us .form-control {
   background-color: transparent;
   border-color: rgba(255,255,255,.1);
   height: 50px;
@@ -876,13 +874,19 @@ section {
   box-shadow: none;
 }
 
-textarea.form-control {
+#contact-us textarea.form-control {
   min-height: 180px;
   resize:none;
 }
 
-.form-group {
-  margin-bottom: 30px;
+#contact-us .form-group{
+  background-color: rgba(255,255,255,.9);
+  border-radius: 5px;
+}
+
+#contact-us .form-group ::-webkit-input-placeholder {
+  color: #555;
+  font-weight: 300;
 }
 
 .contact-info {
@@ -977,6 +981,21 @@ ul.address {
   background-color: #ff6b00;
 }
 
-/*Presets*/
+/* login page */
+.input-group{
+    margin-bottom: 15px;
+}
+.modal-dialog{
+    /*position: absolute;*/
+    margin: auto;
+}
 
+.padding-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+.nav>li>button
+{position:relative;display:block;padding:10px 15px}

@@ -1,0 +1,13 @@
+No placeholders (except in masks)
+meta viewport
+
+--PAGES NEEDED--
+Search page
+Compare functionality(new page? section of search? popup?)
+Profile page (add questions)
+Counselor about page
+    -book btn + profile check
+
+
+DONE Add "forgot password" page
+DONE Add register modal

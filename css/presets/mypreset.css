@@ -1,0 +1,144 @@
+/*
+7753af (Ppl)
+595FB2 (BP)
+4a83a4 (Blu)
+ffd86b or dfb920 (Y) (O)
+e8ae3c (O)
+43484E (Grey)
+CC6C6C (red)
+*/
+a,
+#home-slider .caption h1 span, 
+#twitter-carousel .item span, 
+#footer .footer-bottom, 
+#single-portfolio .close-folio-item:hover, 
+.single-table.featured .btn.btn-primary, 
+.contact-info ul li a:hover, 
+#footer .footer-bottom a  {
+  color: #595FB2;
+}
+
+.btn.btn-primary:hover,
+.btn-submit:hover {
+  background-color:  #e8ae3c;
+  color: #222;
+  font-weight: 600;
+}
+
+a:hover, a:focus{
+	color:  #e8ae3c;
+}
+
+li.scroll a:hover {
+    background-color: #e8ae3c; 
+    color: #43484E;
+}
+
+.main-nav, 
+.progress-bar.progress-bar-primary, 
+.single-table.featured, 
+.btn.btn-primary, 
+.twitter-icon .fa-twitter, 
+.twitter-left-control:hover, .twitter-right-control:hover, 
+.post-icon, 
+.entry-header .date:after, 
+.btn-loadmore:hover, 
+#footer, 
+.caption .btn-start:hover, 
+.left-control:hover, 
+.right-control:hover, 
+.folio-overview a:hover{
+  background-color:#595FB2;
+}
+.btn-submit{
+    background-color: #4a83a4;
+}
+
+.btn-info:hover{
+  background-color: #4a83a4;
+}
+
+.btn-danger{
+  background-color: #CC6C6C;
+}
+
+.twitter-left-control:hover, 
+.twitter-right-control:hover, 
+.btn-loadmore:hover  {
+	border: 1px solid #595FB2;
+}
+
+.caption .btn-start:hover, 
+.left-control:hover, 
+.right-control:hover {
+	border-color: #595FB2;
+}
+
+.twitter-icon .fa-twitter:after {
+	border-color: #595FB2 transparent transparent;
+}
+
+
+#features{
+    margin:0px;
+}
+.picture-overlay{
+    width:100%; 
+    background-color: rgba(74,131,164, 0.6);
+}
+
+#login-modal .panel, #login-modal .btn{
+  border: 0px;
+}
+
+#login-modal .panel-heading {
+  background-color:#595FB2;
+  color: #fff;
+}
+
+#login-modal .panel-body{
+  padding-top:30px;
+  padding-bottom: 0px;
+}
+
+#login-modal .mainbox{
+  margin-top: 50px;
+}
+
+#login-modal .modal-footer{
+  float:right; 
+  position: relative; 
+  display: inline-block;
+  border-top: 1px solid #888; 
+  padding-top: 15px;
+}
+
+#login-modal .form-btn-group {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*because "container" was too large for modal-dialog; 
+and putting modal-dialog inside container meant clicking
+to the box's side wouldn't hide it.
+Properties are cp/pasted from bootstrap*/
+#login-modal .padding-container{
+  width:97%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo{
+  height:50px;
+  width:50px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+}
+.logo img{
+  width:90%;
+  margin:auto;
+}
