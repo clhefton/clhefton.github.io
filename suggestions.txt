@@ -1,13 +1,25 @@
-No placeholders (except in masks)
-meta viewport
-
 --PAGES NEEDED--
-Search page
-Compare functionality(new page? section of search? popup?)
-Profile page (add questions)
-Counselor about page
-    -book btn + profile check
 
+Profile page - bring from registration
+
+Counselors: add buttn to "team" section
+    -> popup four-question
+    -> send user email with details
+
+Compare {
+    method: modal,
+    limit: 2,
+}
+
+Search {
+    method: box,
+    by: [location, college, degree_type],
+} 
+
+
+--Design issues--
 
 DONE Add "forgot password" page
 DONE Add register modal
+DONE meta viewport
+DONE No placeholders in registration (except in masks)

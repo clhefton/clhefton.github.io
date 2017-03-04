@@ -5,6 +5,9 @@ http://bootsnipp.com/snippets/4lW12
 
 # login popup
 http://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects
+http://bootsnipp.com/snippets/featured/clean-modal-login-form
+http://bootsnipp.com/snippets/2qPoQ
 
-# register page
-http://bootsnipp.com/snippets/vvnKj
+# template starting point
+https://shapebootstrap.net/item/1524991-oxygen-free-bootstrap-one-page-theme
+

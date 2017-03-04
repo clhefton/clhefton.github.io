@@ -1,11 +1,11 @@
 jQuery(function($) {
 
-	$('a.show-login').click(function(e)
+	//prevent jumping to top of page (visiting "#") in login modal
+	$('a#btn-login, a#btn-tosignup, a#btn-signup, a#loginlink, a.show-login').click(function(e)
 	{
-		//prevent jumping to top of page (visiting "#")
     	e.preventDefault();
 	});
-	
+
 	//Preloader
 	var preloader = $('.preloader');
 	$(window).load(function(){
@@ -29,13 +29,13 @@ jQuery(function($) {
 		}
 	});
 	
-	// Navigation Scroll
+	// Navigation Scroll; offset 80px so navbar doesn't cover section content
 	$(window).scroll(function(event) {
 		Scroll();
 	});
 
 	$('.navbar-collapse ul li a').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 1000);
 		return false;
 	});
 
@@ -60,7 +60,7 @@ jQuery(function($) {
 	};
 
 	$('#tohash').on('click', function(){
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 1000);
 		return false;
 	});
 	
@@ -166,4 +166,7 @@ jQuery(function($) {
 	google.maps.event.addDomListener(window, 'load', initialize_map);
 	
 });
+
+
+	$(window).on("hashchange", offsetAnchor);
 

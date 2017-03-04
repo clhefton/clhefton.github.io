@@ -10,19 +10,18 @@
   <link href="css/animate.min.css" rel="stylesheet"> 
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/mypreset.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
   <![endif]-->
   
-<!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
- --> 
- <link rel="shortcut icon" href="images/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="images/favicon.ico">
 </head><!--/head-->
 
 <body>
@@ -38,8 +37,10 @@
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Welcome to <span>Unisearchity</span></h1>
             <p class="animated fadeInRightBig">Search - Compare - Find counselling</p>
+
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#service-header">Take the first step</a>
           </div>
+
         </div>
         <!-- <div class="item" style="background-image: url(images/slider/2.jpg)">
           <div class="caption">
@@ -73,7 +74,7 @@
             <li class="scroll active"><a href="#home">Home</a></li>
             <li class="scroll"><a href="#service-header">Service</a></li> 
             <li class="scroll"><a href="#about-header">About Us</a></li>
-            <li class="scroll"><a href="#portfolio-header">Featured schools</a></li>
+            <li class="scroll"><a href="#portfolio-header">Portfolio</a></li>
             <li class="scroll"><a href="#team-header">Team</a></li>
             <li class="scroll"><a href="#contact-header">Contact</a></li>       
             <li class="scroll">
@@ -92,6 +93,14 @@
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
             <h1>Our Services</h1>
+            
+              <div style="display: inline-block;">
+                Enter user email here to test sessions:
+                <div style="background-color: #aaaaaa; border: 1px solid black; line-height: 2em; border-radius: 10px; width: 40em; display: inline-block;"> <?php echo $SOME_VARIABLE; ?> 
+                </div>
+              </div>
+              <p> Link to pg to see if it works: <a href="testsession.php">testsession</a></p>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
           </div>
         </div> 
@@ -104,47 +113,48 @@
 
 <!-- New services section -->
   <section id="services" class="parallax">
-    <div class="picture-overlay">
-      <div class="container">
-        <div class="service-listings">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="service-listing wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <div class="service-icon">
-                <i class="fa fa-star fa-fw"></i>
-                </div>
-                <div class="service-info">
-                  <h3>RANK</h3>
-                  <p>Knowing where to go is an important decision. Compare rankings and ratings from various schools with a single click and find the places that best suit your needs here.</p>
-                </div>
+  <div class="picture-overlay">
+    <div class="container">
+      <div class="service-listings">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="service-listing wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="service-icon">
+              <i class="fa fa-star fa-fw"></i>
               </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="service-listing wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
-                <div class="service-icon">
-                  <i class="fa fa-search fa-fw"></i>
-                </div>
-                <div class="service-info">
-                  <h3>SEARCH</h3>
-                  <p>Whether you're a counsellor, hiring manager, or concerned parent, find all the information you need with our search tools. Let us help you find info on all the top schools before making a decision</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="service-listing wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
-                <div class="service-icon">
-                  <i class="fa fa-handshake-o fa-fw"></i>
-                </div>
-                <div class="service-info">
-                  <h3>SEEK COUNSELLING</h3>
-                  <p>Our experienced counsellors are here to help you make a decision on where to look for the best schools. Talk to our counselors for career guidance and help choosing schools.</p>
-                </div>
+              <div class="service-info">
+                <h3>RANK</h3>
+                <p>Knowing where to go is an important decision. Compare rankings and ratings from various schools with a single click and find the places that best suit your needs here.</p>
               </div>
             </div>
           </div>
-        </div>            
-      </div>
+          <div class="col-sm-4">
+            <div class="service-listing wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <div class="service-icon">
+                <i class="fa fa-search fa-fw"></i>
+              </div>
+              <div class="service-info">
+                <h3>SEARCH</h3>
+                <p>Whether you're a counsellor, hiring manager, or concerned parent, find all the information you need with our search tools. Let us help you find info on all the top schools before making a decision</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="service-listing wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <div class="service-icon">
+                <i class="fa fa-handshake-o fa-fw"></i>
+              </div>
+              <div class="service-info">
+                <h3>SEEK COUNSELLING</h3>
+                <p>Our experienced counsellors are here to help you make a decision on where to look for the best schools. Talk to our counselors for career guidance and help choosing schools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
     </div>
+
+  </div>
   </section>
 
 <!-- TODO: Have an adding effect where it counts up to 3000 etc? -->
@@ -152,14 +162,14 @@
     <div class="container">
       <div class="row count">
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <i class="fa fa-building-o"></i>
+          <i class="fa fa-user"></i>
           <h3 class="timer">4000</h3>
-          <p>Schools</p>
+          <p>Happy Clients</p>
         </div>
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-          <i class="fa fa-user-o"></i>
-          <h3 class="timer">100,000</h3>                    
-          <p>Happy users</p>
+          <i class="fa fa-desktop"></i>
+          <h3 class="timer">200</h3>                    
+          <p>Modern Websites</p>
         </div> 
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
           <i class="fa fa-trophy"></i>
@@ -167,9 +177,9 @@
           <p>WINNING AWARDS</p>
         </div> 
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
-          <i class="fa fa-handshake-o"></i>                    
-          <h3>7 days/week</h3>
-          <p>Great Support</p>
+          <i class="fa fa-comment-o"></i>                    
+          <h3>24/7</h3>
+          <p>Fast Support</p>
         </div>                 
       </div>
     </div>
@@ -181,19 +191,19 @@
    <div class="container">
       <div class="row">
         <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-          <h1>About Us</h1>
-          <p>Unisearchity.com is a one-stop solution for school searches based on courses and location.</p>
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section id="about-us" class="parallax">
-    <div class="picture-overlay">
-      <div class="container">
-        <div class="row">
-          <!-- <div class="col-sm-6"> -->
-            <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+  <div class="picture-overlay">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-sm-6"> -->
+          <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             
             <p>Unisearchity.com is a one-stop solution for school searches based on courses and location for high-school and graduate students in India and abroad. It is an easily-navigable, user-friendly forum for valuable quests regarding programs offered by some of the best schools in India.  It was put in motion in 2012 and belongs to Valonia Consultancy LLP, who is the owner of esteemed firms likes Job99.com, Unify.org, and more. With this strong brand thoroughbred, Unisearchity.com offers an exclusive privilege of helping the students in decision making at a very crucial point in their lives coupled with individual counseling. </p>
           
@@ -213,7 +223,7 @@
     <div class="container">
       <div class="row">
         <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h1>Top Schools</h1>
+          <h2>Top Schools</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
         </div>
       </div> 
@@ -223,11 +233,11 @@
   <section id="portfolio">
     <div class="container-fluid">
       <div class="row" style="margin-bottom: 2em">
-        <div class="col-sm-6 col-md-6 col-lg-2 col-lg-offset-2">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iima.png" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iima.png');"> <p>p</p></div>
+              <div class="helper"><img src="images/university/iima.png" alt=""></div>
             </div>
             <!--<div class="overlay">
               <div class="overlay-content">
@@ -245,66 +255,78 @@
             </div> -->
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iimb.png" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iimb.png')"><p>p</p></div>
+              <div class="helper"><img src="images/university/iimb.png" alt=""></div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iim-calcutta.png" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iim-calcutta.png')"><p>p</p></div>
+              <div class="helper"><img src="images/university/iim-calcutta.png" alt=""></div>
             </div>
-          </div>          
+            <!-- <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iit-delhi.jpg" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iimk.png')"><p>p</p></div>
+              <div class="helper"><img src="images/university/iit-delhi.jpg" alt=""></div>
             </div>
           </div>
         </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-2 col-lg-offset-2">
+        <div class="col-sm-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="700ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iit-guwahati.png" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iit-guwahati.png')"><p>p</p></div>
+              <div class="helper"><img src="images/university/iit-guwahati.png" alt=""></div>
             </div>
+
           </div>
         </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iit-kanpur.png" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iit-kanpur.png')"><p>p</p></div>
+              <div class="helper"><img src="images/university/iit-kanpur.png" alt=""></div>
             </div>
 
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="900ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iit-roorkee.png" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iit-roorkee.png')"><p>p</p></div>
+              <div class="helper"><img src="images/university/iit-roorkee.png" alt=""></div>
             </div>
 
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-2">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms">
             <div class="folio-image">
-              <!-- <div class="helper"><img src="images/university/iit-k.png" alt=""></div> -->
-              <div class="helper" style="background-image: url('images/university/iit-k.png')"><p>p</p></div>
+              <div class="helper"><img src="images/university/iit-k.png" alt=""></div>
             </div>
+
           </div>
         </div>
+        <div class="col-sm-2"></div>
       </div>
     </div>
     <div id="portfolio-single-wrap">
@@ -317,7 +339,7 @@
    <div class="container">
       <div class="row">
         <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-          <h1>Meet Our Team</h1>
+          <h2>Meet Our Team</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
         </div>
       </div>
@@ -329,10 +351,10 @@
     <div class="container">
       <div class="team-members">
         <div class="row">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-4">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
               <div class="member-image">
-                <img src="images/team/noperson_f.png" alt="">
+                <img class="img-responsive" src="images/team/noperson_f.png" alt="">
               </div>
               <div class="member-info">
                 <h3>Lindsay Hefton</h3>
@@ -341,10 +363,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-4">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
               <div class="member-image">
-                <img src="images/team/noperson_m.png" alt="">
+                <img class="img-responsive" src="images/team/noperson_m.png" alt="">
               </div>
               <div class="member-info">
                 <h3>Sahil Kakroo</h3>
@@ -353,10 +375,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-4">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
               <div class="member-image">
-                <img src="images/team/noperson_m.png" alt="">
+                <img class="img-responsive" src="images/team/noperson_m.png" alt="">
               </div>
               <div class="member-info">
                 <h3>Pratik Iyer</h3>
@@ -365,14 +387,28 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+        </div>
+        <div class="row" style="margin-top:2em;">
+          <div class="col-sm-4 col-sm-offset-2">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
               <div class="member-image">
-                <img src="images/team/noperson_f.png" alt="">
+                <img class="img-responsive" src="images/team/noperson_f.png" alt="">
               </div>
               <div class="member-info">
                 <h3>Palak Kalra</h3>
                 <h4>Marketing and Communications</h4>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
+              <div class="member-image">
+                <img class="img-responsive" src="images/team/noperson_m.png" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Koundi N</h3>
+                <h4>Developer</h4>
                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
               </div>
             </div>
@@ -387,7 +423,7 @@
     <div class="container">
       <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <h1>Contact Us</h1>
+              <h2>Contact Us</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
           </div>
       </div>
@@ -513,7 +549,7 @@
                           <!-- buttons -->
                           <div class="form-group form-btn-group">
                               <div class="col-sm-12">
-                                  <a class="btn btn-info" href="#" id="btn-login">Login</a> <a class="btn btn-primary" href="#" id="btn-tosignup" onclick="$('#loginbox').hide(); $('#forgotbox').hide(); $('#signupbox').show()">Sign up</a>
+                                  <a class="btn btn-info" href="#" id="btn-login">Login</a> <a class="btn btn-primary" href="#" id="btn-signup" onclick="$('#loginbox').hide(); $('#forgotbox').hide(); $('#signupbox').show()">Sign up</a>
                               </div>
                           </div>
 

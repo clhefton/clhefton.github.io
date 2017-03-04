@@ -1,12 +1,38 @@
 /*
 7753af (Ppl)
 595FB2 (BP)
-4a83a4 (Blu)
+4a83a4 rgb(74, 131, 164) (Blu)
+3c88b4 rgb(60, 136, 180)  (Blu more sat)
 ffd86b or dfb920 (Y) (O)
 e8ae3c (O)
 43484E (Grey)
 CC6C6C (red)
 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Sansita');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #43484E;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Sansita', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+
+}
+/* white text on dark backgrounds: back off*/
+.parallax :not(input) p {
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+
 a,
 #home-slider .caption h1 span, 
 #twitter-carousel .item span, 
@@ -51,7 +77,7 @@ li.scroll a:hover {
   background-color:#595FB2;
 }
 .btn-submit{
-    background-color: #4a83a4;
+    background-color: #3c88b4;
 }
 
 .btn-info:hover{
