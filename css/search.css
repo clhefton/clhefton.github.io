@@ -1,3 +1,9 @@
 /*************************
-*******Typography******
+*******Search page******
 **************************/
+/* http://bootsnipp.com/snippets/z1VWK */
+/* override Bootstrap margin-bottom on jumbotron */
+.jumbotron {
+  margin-bottom: 0px;
+}
+

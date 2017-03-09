@@ -522,6 +522,7 @@
                       <div class="panel-title">
                           Sign In
                       </div>
+          
                   </div>
 
                   <!-- body -->

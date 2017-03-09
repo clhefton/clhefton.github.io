@@ -1,0 +1,140 @@
+    .lower-content{
+      display:table;
+    }
+
+    .wrapper, .sidebar {
+      display:table-cell;
+    }
+
+    .caret {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 2px;
+      vertical-align: middle;
+      border-top: 4px solid;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+    .dropdown-menu {
+      display: none;
+    }
+
+    /*Display nav and site as table cells*/
+    .sidebar,
+    .wrapper {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .sidebar {
+      position: relative;
+      display: block;
+      min-height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      border: none;
+    }
+
+    .sidebar .sidebar-toggle {
+      position: relative;
+      float: right;
+      margin: 16px;
+      padding: 0;
+      background-image: none;
+      border: none;
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      opacity: 0.7;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .sidebar .sidebar-badge {
+      display: inline-block;
+      min-width: 24px;
+      line-height: 24px;
+      padding: 0 3px;
+      font-size: 12px;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+    }
+
+    .sidebar .sidebar-text {
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      padding: 0;
+      padding-left: 16px;
+      padding-right: 56px;
+      text-decoration: none;
+      clear: both;
+      font-weight: 500;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .sidebar .sidebar-text .caret {
+      position: absolute;
+      right: 24px;
+      top: 40%;
+    }
+
+    .sidebar .sidebar-nav li a {
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      padding: 0;
+      padding-left: 16px;
+      padding-right: 56px;
+      text-decoration: none;
+      clear: both;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .sidebar .sidebar-nav li a .caret {
+      position: absolute;
+      right: 24px;
+      top: 40%;
+    }
+    .sidebar .sidebar-nav li a .sidebar-badge {
+      position: absolute;
+      right: 16px;
+      top: 12px;
+    }
+ 
+    .sidebar .sidebar-nav .dropdown-menu {
+      /*MUST have next two lines; rest is optional.*/
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .sidebar .sidebar-nav .dropdown-menu ul li {
+      padding-left:30px;
+    }
+    .sidebar.open {
+      min-width: 280px;
+      width: 280px;
+      }

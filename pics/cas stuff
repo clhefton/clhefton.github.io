@@ -1,0 +1,54 @@
+General
+Request URL:https://tamu.blackboard.com/webapps/portal/execute/tabs/tabAction
+Request Method:POST
+Status Code:200 OK
+Remote Address:192.230.225.25:443
+
+Response Headers
+view source
+Cache-Control:must-revalidate
+Cache-Control:no-store
+Cache-Control:max-age=0
+Cache-Control:private
+Content-Encoding:gzip
+Content-Security-Policy:frame-ancestors 'self'
+Content-Type:application/xml;charset=UTF-8
+Date:Sat, 04 Mar 2017 05:54:37 GMT
+Expires:Fri, 04 Mar 2016 05:54:37 GMT
+Last-Modified:Tue, 04 Mar 1997 05:54:37 GMT
+nnCoection:close
+P3P:CP="CAO PSA OUR"
+Pragma:private
+Server:Apache-Coyote/1.1
+Set-Cookie:s_session_id=C170A7EEFCCBBB5EF2B8BB4FC02B8E97; Expires=Sun, 29-Feb-2032 05:54:37 GMT; Path=/; Secure; HttpOnly
+Set-Cookie:session_id=06F040A7C6111573C2BECE6B840CC559; Expires=Sun, 29-Feb-2032 05:54:37 GMT; Path=/; HttpOnly
+Transfer-Encoding:chunked
+Vary:Accept-Encoding,User-Agent
+X-Blackboard-appserver:fgprd-300551-sf172807-app008.mhint
+X-Blackboard-product:Blackboard Learn &#8482; 9.1.201510.1175205
+X-Frame-Options:SAMEORIGIN
+
+Request Headers
+view source
+Accept:text/javascript, text/html, application/xml, text/xml, */*
+Accept-Encoding:gzip, deflate, br
+Accept-Language:en-US,en;q=0.8,ar;q=0.6
+Connection:keep-alive
+Content-Length:73
+Content-type:application/x-www-form-urlencoded; charset=UTF-8
+Cookie:JSESSIONID=484179FD7B41CC8B83ADC7A28EAF7AEE; NSC_300551_wjq_192.230.225.25*443=ffffffff090d10ef45525d5f4f58455e445a4a4229a0; _gat=1; JSESSIONID=null; _shibsession_64656661756c7468747470733a2f2f74616d752e626c61636b626f6172642e636f6d2f73686962626f6c6574682d7370=_6e265f9bb395648c538705e9743a7e0d; web_client_cache_guid=7ab449e7-4b8e-4267-88bd-e1aac643460c; session_id=06F040A7C6111573C2BECE6B840CC559; s_session_id=C170A7EEFCCBBB5EF2B8BB4FC02B8E97; _ga=GA1.2.1889660913.1488068049
+DNT:1
+Host:tamu.blackboard.com
+Origin:https://tamu.blackboard.com
+Referer:https://tamu.blackboard.com/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_25_1
+User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+X-Prototype-Version:1.7
+X-Requested-With:XMLHttpRequest
+
+Form Data
+view source
+view URL encoded
+action:refreshAjaxModule
+modId:_19_1
+tabId:_4190_1
+tab_tab_group_id:_25_1
