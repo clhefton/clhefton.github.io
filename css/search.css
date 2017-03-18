@@ -1,9 +1,61 @@
 /*************************
-*******Search page******
+*******Main elements******
 **************************/
+
 /* http://bootsnipp.com/snippets/z1VWK */
 /* override Bootstrap margin-bottom on jumbotron */
 .jumbotron {
   margin-bottom: 0px;
 }
 
+/*************************
+******Side Navigation*****
+**************************/
+
+.u-menutoggle {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 56px;
+  text-decoration: none;
+  clear: both;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.u-dropdown-menu {
+  list-style: none;
+  position:relative;
+  display:none;
+}
+
+.u-dropdown-menu li{
+  padding:5px 0;
+}
+
+/*************************
+******Side Navigation*****
+**************************/
+
+.search-results{
+  table-layout: fixed;
+  width: 50% ;
+}
+.search-results th,
+.search-results td {
+  padding: 0 10px;
+  /*border: 1px solid green;*/
+}
+.search-results .search-rating{
+  text-align: right;
+}

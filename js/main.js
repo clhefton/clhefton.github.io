@@ -141,8 +141,11 @@ jQuery(function($) {
 	});
 
 
-	
+	// Search page --------------------------------------
+	$('.u-menutoggle').click(function(){
+    $('.u-dropdown-menu').slideToggle();
+  });
+
+	$('#lower-content').css('display', 'table');
+
 });
-
-	// $(window).on("hashchange", offsetAnchor);
-
