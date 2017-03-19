@@ -29,12 +29,39 @@
   <!-- header -->
   <header>
     <div class="jumbotron uni-jumbo">
-      <div class="container">
+    <div id="bluback">
+      <div class="container" >
         <div class="row">
-          <h1> Search Universities </h1>
-          <p> Find your place here.</p>
+          <h1> Search Universities</h1>
+          
+          <div id="search-inputs">
+            <div id="dsch">
+              <label for="schname">School name</label>
+              <input id="schname">
+            </div>
+            <div id="dcrs">
+              <label for="course">Course</label>
+              <select id="course" name="course">
+                <option value="MBA" selected="selected">MBA</option>
+                <option value="Eng">Engineering</option>
+                <option value="Law">Law</option>
+              </select>
+            </div>
+            <div id="drat"><label for="rating">Rating</label>
+              <select id="rating" name="rating">
+                <option value="all" selected="selected">All</option>
+                <option value="ten">Top 10%</option>
+                <option value="twenty">Top 20%</option>
+                <option value="thirty">Top 30%</option>
+                <option value="forty">Top 40%</option>
+                <option value="fifty">Top half</option>
+              </select>
+            </div>
+          </div>
+
         </div>
       </div>
+    </div>
     </div>
     
     <div class="main-nav">
@@ -77,17 +104,10 @@
 
         <form>
         <li class="u-dropdown">
-          <a class="u-menutoggle">Search by</a>
+          <a class="u-menutoggle">Sort by</a>
           <ul class="u-dropdown-menu">
             <li><input type="radio" name="searchby" value="loc"> Location</li>
             <li><input type="radio" name="searchby" value="rank"> Rank</li>
-            <li>
-              <select name="course">
-                <option value="mba">MBA</option> 
-                <option value="eng">Engineering</option>
-                <option value="law">Law</option>
-              </select>
-            </li>
             <li><input type="submit" value="Refresh search"></li>
           </ul>
         </li>  

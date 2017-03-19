@@ -1,11 +1,67 @@
 /*************************
-*******Main elements******
+****Jumbotron elements****
 **************************/
 
 /* http://bootsnipp.com/snippets/z1VWK */
 /* override Bootstrap margin-bottom on jumbotron */
-.jumbotron {
+.uni-jumbo {
   margin-bottom: 0px;
+  padding:0;
+  background: #222 url('../images/unijumbo/unicollage.jpg') center center no-repeat;
+}
+
+.uni-jumbo h1{
+  color:#fff;
+  font-weight: 500;
+  /*text-shadow: -2px 0 #555, 0 2px #555, 2px 0 #555, 0 -2px #555;*/
+}
+
+.uni-jumbo h1 span{
+  color:#595FB2;
+}
+
+#bluback {
+  padding:48px 0;
+  background-color: rgba(74, 131, 164, 0.8);
+}
+
+#search-inputs {
+  display:block;
+  width: 100%;
+}
+
+#search-inputs div {
+  float:left;
+  margin-left:0px;
+  margin-right:0px;
+  padding:0px;
+}
+
+#search-inputs #dsch{
+  width:50%;
+  min-width: 300px;
+}
+  
+#search-inputs label {
+  display:block;
+  margin:0px;
+  padding: 5px 10px;
+  border: 0px;
+  background: #efefef; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #e0e0e0, #f5f5f5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #e0e0e0, #f5f5f5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #e0e0e0, #f5f5f5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(bottom right, #e0e0e0, #f5f5f5); /* Standard syntax */
+}
+#search-inputs input, #search-inputs select {
+  border:0px;
+  display:block;
+  width:100%;
+  height: 2em;
+}
+
+#search-inputs input {
+  padding: 0 10px;
 }
 
 /*************************
@@ -44,7 +100,7 @@
 }
 
 /*************************
-******Side Navigation*****
+********Main content******
 **************************/
 
 .search-results{
